@@ -212,7 +212,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-15 14:11:33" itemprop="dateModified" datetime="2020-10-15T14:11:33+08:00">2020-10-15</time>
+                <time title="Modified: 2020-10-15 14:14:35" itemprop="dateModified" datetime="2020-10-15T14:14:35+08:00">2020-10-15</time>
               </span>
 
           
@@ -226,15 +226,70 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java-web开发环境配置"><a href="#Java-web开发环境配置" class="headerlink" title="Java web开发环境配置"></a>Java web开发环境配置</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="Java-web开发环境配置"><a href="#Java-web开发环境配置" class="headerlink" title="Java web开发环境配置"></a>Java web开发环境配置</h1><h3 id="一、服务器安装：tomcat9-0"><a href="#一、服务器安装：tomcat9-0" class="headerlink" title="一、服务器安装：tomcat9.0"></a>一、服务器安装：tomcat9.0</h3><p>下载网址：<a target="_blank" rel="noopener" href="http://tomcat.apache.org/">http://tomcat.apache.org/</a></p>
+<p>tomcat安装完成后测试（前提要配置好环境变量否则会出现闪退）：打开tomcat文件中的bin文件，点击startup.bat</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%B8%80.jpg" alt="一"></p>
+<p>（tomcat9.exe是以控制台形式打开Tomcat，Tomcat9w.exe是以窗口形式打开Tomcat）</p>
+<p>然后在浏览器输入<a target="_blank" rel="noopener" href="http://localhost:8006/index.jsp%E5%8D%B3%E5%8F%AF%E8%BF%9B%E5%85%A5%E4%B8%80%E4%B8%8B%E7%95%8C%E9%9D%A2%EF%BC%88%E8%BF%99%E9%87%8C%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E6%97%B6%E6%88%91%E6%8A%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%94%B9%E4%B8%BA%E4%BA%868006%EF%BC%8C%E4%B8%80%E8%88%AC%E9%BB%98%E8%AE%A4%E4%B8%BA8080%EF%BC%89">http://localhost:8006/index.jsp即可进入一下界面（这里安装过程时我把服务器的端口号改为了8006，一般默认为8080）</a></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C.png" alt="二"></p>
+<p>第一次打开Tomcat可能会出现以下乱码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.鐗堟湰:            10.0</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log 缁�.閫�:          amd64</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 鐜鍙橀噺:             C:\Program Files\Java\jdk1.8.0_191\jre</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 鐗堟湰:           1.8.0_191-b12</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.渚涘簲鍟�:            Oracle Corporation</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\user\.IntelliJIdea2018.3\system\tomcat\Unnamed_demo</span><br><span class="line">12-Jan-2019 11:15:48.911 淇℃伅 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\tomcat\apache-tomcat-9.0.14</span><br></pre></td></tr></table></figure>
+
+<p>解决方法：就是修改tomcat的conf下的logging.properties中的参数，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java.util.logging.ConsoleHandler.encoding &#x3D; GBK</span><br></pre></td></tr></table></figure>
+
+<p>将UTF-8改到GBK就行了保存后重启tomcat就正常了。</p>
+<h3 id="二、Tomcat安装和测试完成后，安装IDEA"><a href="#二、Tomcat安装和测试完成后，安装IDEA" class="headerlink" title="二、Tomcat安装和测试完成后，安装IDEA"></a>二、Tomcat安装和测试完成后，安装IDEA</h3><p>下载网址：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%B8%89.jpg" alt="三"></p>
+<p>一共有两个版本，我下载的是Ultimate版，然后破解；</p>
+<p>白嫖步骤:</p>
+<p>先下载安装好IDEA后直接打开IDEA；</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%9B%9B.png" alt="四"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%94.png" alt="五"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%85%AD.png" alt="六"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%B8%83.png" alt="七"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%85%AB.png" alt="八"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%B9%9D.png" alt="九"></p>
+<p>打开后选择activate IntelliJ IDEA中的Activation coed</p>
+<p>然后下载免费激活码：<a target="_blank" rel="noopener" href="http://idea.npegeek.com/code.html">http://idea.npegeek.com/code.html</a></p>
+<p>（在找到这个激活码之前试过网上的各种方法，下载了N多插件，每一次看着步骤没什么毛病，可一到安装插件时总比别人少了安装参数的写入，所以弄了好几遍的没成功，结果就找到了这个免费的激活码，那些插件配来的激活码大多数都是失效的，输进去都是key is invalid，最后发现了上面网址的激活码可以用，还是一次就激活永久的）</p>
+<h3 id="三、IDEA安装和破解完成后，重新打开IDEA，然后开始配置Tomcat，"><a href="#三、IDEA安装和破解完成后，重新打开IDEA，然后开始配置Tomcat，" class="headerlink" title="三、IDEA安装和破解完成后，重新打开IDEA，然后开始配置Tomcat，"></a>三、IDEA安装和破解完成后，重新打开IDEA，然后开始配置Tomcat，</h3><p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81.png" alt="十"></p>
+<p>1.在搜索框里输入server</p>
+<p>2.点击Application servers</p>
+<p>3.点击加号选择Tomcat server（这里要看清楚别选成TomEE，因为这两个很像）</p>
+<p>Tips：Tomcat Home和Tomcat base diretory都选择Tomcat的安装目录上就好</p>
+<p>4.选好后点击apply，点击ok</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%B8%80.png" alt="十一"></p>
+<h3 id="四、IDEA中的Tomcat配置完成后，创建一个web项目"><a href="#四、IDEA中的Tomcat配置完成后，创建一个web项目" class="headerlink" title="四、IDEA中的Tomcat配置完成后，创建一个web项目"></a>四、IDEA中的Tomcat配置完成后，创建一个web项目</h3><p>1.点击New Project，然后选择Java Enterprise然后一直next，选择目录后点击finish。</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%BA%8C.png" alt="十二"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%B8%89.png" alt="十三"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E5%9B%9B.png" alt="十四"></p>
+<p>2.创建好项目后，右键项目名，点击Add framework application，点击JavaEE的web application点击ok</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%BA%94.png" alt="十五"></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E5%85%AD.png" alt="十六"></p>
+<p>1、在web/WEB-INF下创建两个文件夹classes和lib，classes用来存放编译后输出的classes文件，lib用于存放第三方jar包</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%B8%83.png" alt="十七"></p>
+<p>2、配置文件夹路径</p>
+<p>(1)File -&gt; Project Structure (快捷键：Ctrl + Shift + Alt + S) -&gt; 选择Module </p>
+<p>(2)选择 Paths -&gt; 选择”Use module compile output path” -&gt; 将Output path和Test output path都选择刚刚创建的classes文件夹。</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E5%85%AB.png" alt="十八"></p>
+<p>3、接着选择Dependencies -&gt;  将Module SDK选择为1.8 -&gt; 点击右边的“+”号  -&gt; 选择1 “Jars or Directories”-&gt;选择lib文件夹-&gt;选择jar diretory</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E5%8D%81%E4%B9%9D.png" alt="十九"></p>
+<p>4.配置Tombat服务器</p>
+<p>（1）点击绿色锤子旁边的add configuration</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C%E5%8D%81.png" alt="二十"></p>
+<p>（2）点击加号添加Tomcat Server中的local，点击application Server后面的configurate，选择tomcat的安装目录，再把after launch的勾选取消，点击apply，再点击ok</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C%E4%B8%80.png" alt="二一"></p>
+<p>下面的warning是因为项目还没部署</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C%E4%BA%8C.png" alt="二二"></p>
+<p>5.在Tomcat中部署并运行项目</p>
+<p>（1）回到刚刚的Tomcat的编辑，点击deployment，点击加号然后选择Artifact，然后在application可以改一下，点击apply，点击ok</p>
+<p>（2）编辑index.jsp</p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C%E4%B8%89.png" alt="二三"></p>
+<p>点击右上角的绿色run键，打开浏览器输入：<a target="_blank" rel="noopener" href="http://localhost:8006/shiyishi/">http://localhost:8006/shiyishi/</a></p>
+<p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%BA%8C%E5%9B%9B.png" alt="二四"></p>
+<p>注：本文中的创建新web项目参阅：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/cangqinglang/p/10027199.html">https://www.cnblogs.com/cangqinglang/p/10027199.html</a></p>
+
       
     </div>
 
