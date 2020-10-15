@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-15T06:10:39.476Z</updated>
+  <updated>2020-10-15T06:11:33.520Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,10 @@
     <link href="http://example.com/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     <id>http://example.com/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
     <published>2020-09-21T13:45:28.539Z</published>
-    <updated>2020-10-15T06:10:39.476Z</updated>
+    <updated>2020-10-15T06:11:33.520Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;Java-web开发环境配置&quot;&gt;&lt;a href=&quot;#Java-web开发环境配置&quot; class=&quot;headerlink&quot; title=&quot;Java web开发环境配置&quot;&gt;&lt;/a&gt;Java web开发环境配置&lt;/h1&gt;&lt;h3 id=&quot;一、服务器安装：tomcat9-0&quot;&gt;&lt;a href=&quot;#一、服务器安装：tomcat9-0&quot; class=&quot;headerlink&quot; title=&quot;一、服务器安装：tomcat9.0&quot;&gt;&lt;/a&gt;一、服务器安装：tomcat9.0&lt;/h3&gt;&lt;p&gt;下载网址：&lt;a href=&quot;http://tomcat.apache.org/&quot;&gt;http://tomcat.apache.org/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;tomcat安装完成后测试（前提要配置好环境变量否则会出现闪退）：打开tomcat文件中的bin文件，点击startup.bat&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://feng-dean.gitee.io/jietu/jietu/%E4%B8%80.jpg&quot; alt=&quot;一&quot;&gt;&lt;/p&gt;
-&lt;p&gt;（tomcat9.exe是以控制台形式打开Tomcat，Tomcat9w.exe是以窗口形式打开Tomcat）&lt;/p&gt;
-&lt;p&gt;然后在浏览器输入&lt;a href=&quot;http://localhost:8006/index.jsp%E5%8D%B3%E5%8F%AF%E8%BF%9B%E5%85%A5%E4%B8%80%E4%B8%8B%E7%95%8C%E9%9D%A2%EF%BC%88%E8%BF%99%E9%87%8C%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E6%97%B6%E6%88%91%E6%8A%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%94%B9%E4%B8%BA%E4%BA%868006%EF%BC%8C%E4%B8%80%E8%88%AC%E9%BB%98%E8%AE%A4%E4%B8%BA8080%EF%BC%89&quot;&gt;http://localhost:8006/index.jsp即可进入一下界面（这里安装过程时我把服务器的端口号改为了8006，一般默认为8080）&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Java-web开发环境配置&quot;&gt;&lt;a href=&quot;#Java-web开发环境配置&quot; class=&quot;headerlink&quot; title=&quot;Java web开发环境配置&quot;&gt;&lt;/a&gt;Java web开发环境配置&lt;/h1&gt;</summary>
     
     
     
