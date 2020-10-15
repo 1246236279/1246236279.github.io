@@ -3,7 +3,8 @@
   <entry>
     <title></title>
     <url>/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Java-web开发环境配置"><a href="#Java-web开发环境配置" class="headerlink" title="Java web开发环境配置"></a>Java web开发环境配置</h1><h3 id="一、服务器安装：tomcat9-0"><a href="#一、服务器安装：tomcat9-0" class="headerlink" title="一、服务器安装：tomcat9.0"></a>一、服务器安装：tomcat9.0</h3><p>下载网址：<a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a></p>
+    <content><![CDATA[<h1 id="Java-web开发环境配置"><a href="#Java-web开发环境配置" class="headerlink" title="Java web开发环境配置"></a>Java web开发环境配置</h1><h3 id="一、服务器安装：tomcat9-0"><a href="#一、服务器安装：tomcat9-0" class="headerlink" title="一、服务器安装：tomcat9.0"></a>一、服务器安装：tomcat9.0</h3><a id="more"></a>
+<p>下载网址：<a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a></p>
 <p>tomcat安装完成后测试（前提要配置好环境变量否则会出现闪退）：打开tomcat文件中的bin文件，点击startup.bat</p>
 <p><img src="http://feng-dean.gitee.io/jietu/jietu/%E4%B8%80.jpg" alt="一"></p>
 <p>（tomcat9.exe是以控制台形式打开Tomcat，Tomcat9w.exe是以窗口形式打开Tomcat）</p>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-15T06:14:35.456Z</updated>
+  <updated>2020-10-15T13:27:08.560Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="http://example.com/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     <id>http://example.com/2020/09/21/Java%20web%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
     <published>2020-09-21T13:45:28.539Z</published>
-    <updated>2020-10-15T06:14:35.456Z</updated>
+    <updated>2020-10-15T13:27:08.560Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Java-web开发环境配置&quot;&gt;&lt;a href=&quot;#Java-web开发环境配置&quot; class=&quot;headerlink&quot; title=&quot;Java web开发环境配置&quot;&gt;&lt;/a&gt;Java web开发环境配置&lt;/h1&gt;&lt;h3</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;Java-web开发环境配置&quot;&gt;&lt;a href=&quot;#Java-web开发环境配置&quot; class=&quot;headerlink&quot; title=&quot;Java web开发环境配置&quot;&gt;&lt;/a&gt;Java web开发环境配置&lt;/h1&gt;&lt;h3 id=&quot;一、服务器安装：tomcat9-0&quot;&gt;&lt;a href=&quot;#一、服务器安装：tomcat9-0&quot; class=&quot;headerlink&quot; title=&quot;一、服务器安装：tomcat9.0&quot;&gt;&lt;/a&gt;一、服务器安装：tomcat9.0&lt;/h3&gt;</summary>
     
     
     
